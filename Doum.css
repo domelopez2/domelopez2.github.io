@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins';
+    line-height: 1.7em;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.lead {
+    font-size: 16px;
+    padding: 10px 10px;
+    text-align: justify;
+}
+
+.btn {
+    display: inline-block;
+    padding: 7px 16px;
+    background: #EEFE87;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 3px;
+    color: #333;
+    transition: all 0.3s;
+}
+
+.bg-dark-line {
+    width: 100%;
+    border-bottom: 2px solid  #ddd;
+}
+
+.bg-dark-line span {
+    background: #EEFE87;
+    padding: 10px 22px;
+    color: #333;
+    text-align: center;
+    display: inline-block;
+}
+
+/* Navbar */
+#navbar {
+    background: #AD9CE4;
+}
+
+#navbar ul {
+    list-style: none;
+    float: right;
+}
+
+#navbar ul li {
+    float: left;
+}
+
+#navbar ul li a {
+    display: block;
+    padding: 20px;
+    text-align: center;
+    transition: all 0.5s;
+}
+
+#navbar ul li a:hover,
+#navbar ul li a.current {
+    background: #EEFE87;
+    transition: all 0.5s;
+}
+
+/* Showcase Area */
+.centro {
+    text-align: center;
+}
+
+/* Footer */
+#main-footer {
+    background: #EEFE87;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+    color: #333;
+}
+
+/* Imágenes sean responsive */
+.img-responsive {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Estilos específicos para dispositivos con un ancho máximo de 720px */
+@media screen and (max-width: 720px) {
+    .container {
+        padding: 0 10px;
+    }
+
+    .lead {
+        font-size: 14px;
+    }
+
+    .btn {
+        font-size: 14px;
+        padding: 6px 12px;
+    }
+
+    #navbar ul {
+        float: none;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    #navbar ul li {
+        display: inline-block;
+        float: none;
+    }
+
+    #navbar ul li a {
+        padding: 10px;
+    }
+}
+
+/* Estilos específicos para dispositivos con un ancho máximo de 420px */
+@media screen and (max-width: 420px) {
+    .lead {
+        font-size: 12px;
+    }
+
+    .btn {
+        font-size: 12px;
+        padding: 5px 10px;
+    }
+}
